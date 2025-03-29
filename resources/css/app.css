@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --font-header: 'Raleway' , ui-sans-serif, system-ui, sans-serif;
+}
+
+#content {
+    @apply py-12 px-5;
+
+    h1 {
+        @apply uppercase text-4xl font-header text-gray-600 hover:text-red-400 mt-12 mb-5;
+    }
+
+    h2 {
+        @apply uppercase text-3xl font-header text-gray-500 hover:text-red-400 mt-12 mb-5;
+    }
+    h3 {
+        @apply uppercase text-2xl font-bold font-header text-gray-500 hover:text-red-400 mt-12 mb-5;
+    }
+
+    p {
+        @apply text-lg text-gray-700 my-3 leading-loose;
+    }
+}
+
+code {
+    @apply  bg-gray-100 px-2 rounded-lg w-full font-bold text-lg;
+    @apply border border-gray-200 text-gray-600;
+}
+
+.shiki code {
+    @apply block py-5 px-6 my-5;
+}
+
+nav {
+    h2 {
+        @apply uppercase text-xl font-header text-gray-500 hover:text-red-400;
+    }
+
+    ul {
+        @apply mt-3 mb-12;
+
+        li {
+            @apply my-3;
+        }
+    }
+}
