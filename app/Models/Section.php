@@ -11,6 +11,7 @@ class Section extends Model
 {
     use HasSlug;
 
+    protected $guarded = [];
     public function pages(): HasMany
     {
         return $this->hasMany(Page::class);

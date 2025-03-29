@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\SectionsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,3 +16,7 @@ Route::group(['prefix' => '/0.x'], function () {
 
 Route::get('/edit/0.x/{section:slug}/{page:slug}', [PageController::class, 'edit'])->name('edit');
 Route::post('/edit/{page}', [PageController::class, 'store'])->name('store');
+
+Route::get('/add/section', [SectionsController::class, 'create'])->name('sections.create');
+Route::post('/add', [SectionsController::class, 'store'])->name('sections.store');
+Route::post('/add/page', [SectionsController::class, 'page'])->name('pages.store');
