@@ -36,8 +36,8 @@ code {
     @apply border border-gray-200 text-gray-600;
 }
 
-.shiki code {
-    @apply block py-5 px-6 my-5;
+code.language-php {
+    @apply whitespace-pre py-5 px-6 my-5;
 }
 
 nav {
