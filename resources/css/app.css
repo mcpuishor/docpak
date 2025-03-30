@@ -32,12 +32,12 @@
 }
 
 code {
-    @apply whitespace-pre block bg-gray-100 px-2 rounded-lg w-full font-bold text-lg;
-    @apply border border-gray-200 text-gray-600;
+    @apply whitespace-pre block bg-gray-100 rounded-lg w-full font-bold text-lg;
+    @apply border border-gray-200 text-gray-600 py-5 px-6 my-5;
 }
 
 p code {
-    @apply inline py-5 px-6 my-5;
+    @apply inline px-2;
 }
 
 nav {
