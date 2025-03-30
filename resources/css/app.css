@@ -37,7 +37,7 @@ code {
 }
 
 p code {
-    @apply inline px-2;
+    @apply inline px-2 py-1;
 }
 
 nav {
